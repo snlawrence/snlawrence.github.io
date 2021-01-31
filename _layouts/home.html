@@ -1,5 +1,5 @@
 ---
-layout: articles
+layout: page
 titles:
   # @start locale config
   en      : &EN       Home
@@ -25,7 +25,7 @@ titles:
   # @end locale config
 show_title: false
 articles:
-  data_source: paginator.posts
+  data_source: posts
   article_type: BlogPosting
   show_cover: false
   show_excerpt: true
@@ -39,4 +39,124 @@ articles:
   {%- include scripts/home.js -%}
 </script>
 
-{{ content }}
+<div class="layout--home section">
+  <div class="item">
+    <div class="item__image">
+      <img class="image image--lg" src="{{page.data.about.image}}"/>
+    </div>
+    <div class="item__content">
+      <div class="item__header">
+	<h2>About Me</h2>
+      </div>
+      <div class="item__description">
+	<p>{{page.data.about.description}}</p>
+        <a class="button button--outline-info button--pill" href="/about.html">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
+
+{%- if _page_articles_data_source -%}
+{%- assign _keys = _page_articles_data_source | split: '.' -%}
+{%- endif -%}
+
+{%- assign _articles = nil -%}
+{%- for _key in _keys -%}
+  {%- if forloop.first -%}
+   {%- case _key -%}
+      {%- when 'site' -%}
+        {%- assign _articles = site -%}
+      {%- when 'page' -%}
+        {%- assign _articles = page -%}
+      {%- when 'layout' -%}
+        {%- assign _articles = layout -%}
+      {%- when 'paginator' -%}
+        {%- assign _articles = paginator -%}
+      {%- else -%}
+        {%- assign _articles = site[_key] -%}
+      {%- else -%}
+    {%- endcase -%}
+  {%- else -%}
+    {%- assign _articles = _articles[_key] -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign _type = page.articles.type | default: layout.articles.type -%}
+
+{%- if _articles -%}
+<div class="layout--home section">
+
+  <div class="layout--articles">
+  <h2> Blog </h2>
+    {%- include snippets/assign.html
+    target=site.data.variables.default.page.articles.show_info
+    source0=layout.articles.show_info source1=page.articles.show_info -%}
+    {%- assign _show_info = __return -%}
+
+    {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+  </div>
+  <ul class="menu">
+    {%- include snippets/get-nav-url.html path=_action.url -%}
+    {%- assign _url = __return -%}
+    <li><a class="button button--outline-info button--pill button--lg" href="blog.html">See More</a></li>
+
+  </ul>
+</div>
+
+{%- endif -%}
+
+<!-- Projects -->
+{%- assign _page_articles_data_source = site.projects -%}
+
+{%- if _page_articles_data_source -%}
+{%- assign _keys = _page_articles_data_source | split: '.' -%}
+{%- endif -%}
+
+{%- assign _articles = nil -%}
+{%- for _key in _keys -%}
+
+  {%- if forloop.first -%}
+    {%- case _key -%}
+
+      {%- when 'site' -%}
+        {%- assign _articles = site -%}
+      {%- when 'page' -%}
+        {%- assign _articles = page -%}
+      {%- when 'layout' -%}
+        {%- assign _articles = layout -%}
+      {%- when 'paginator' -%}
+        {%- assign _articles = paginator -%}
+      {%- else -%}
+        {%- assign _articles = site[_key] -%}
+      {%- else -%}
+    {%- endcase -%}
+  {%- else -%}
+    {%- assign _articles = _articles[_key] -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign _type = item -%}
+
+<div class="layout--home section">
+
+  <div class="layout--articles">
+  <h2> Projects </h2>
+    {%- include snippets/assign.html
+    target=site.data.variables.default.page.articles.show_info
+    source0=layout.articles.show_info source1=page.articles.show_info -%}
+    {%- assign _show_info = __return -%}
+
+  {%- include article-list.html articles=_articles type='grid' -%}
+  </div>
+  <ul class="menu">
+    {%- include snippets/get-nav-url.html path=_action.url -%}
+    {%- assign _url = __return -%}
+    <li><a class="button button--outline-info button--pill button--lg" href="projects.html">See More</a></li>
+
+  </ul>
+</div>
+
+
