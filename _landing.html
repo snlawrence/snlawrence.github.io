@@ -1,0 +1,36 @@
+---
+layout: landing
+# articles:
+#   excerpt_type: html
+mode: immersive
+header:
+  theme: dark
+article_header:
+#  type: cover
+  height: 80vh
+  theme: dark
+  background_color: "#367a9a"
+  background_image:
+    src: /assets/images/me_about.JPG
+   # gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
+  actions:
+    - text: About me
+      type: error
+      url: /about.html
+
+data:
+  sections:
+    - title: About me
+      excerpt: I'm Sean Lawrence, a Researcher currently completing his PhD in Experimental Fluid Mechanics with the Department of Mechanical and Aerospace Engineering at Monash University.
+      actions:
+        - text: Learn More
+          url: /about.html
+
+    - title: Blog
+      articles:
+        data_source: site.posts
+        show_excerpt: true
+        show_readmore: true
+        show_info: true
+---
+
