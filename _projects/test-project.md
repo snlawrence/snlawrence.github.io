@@ -2,6 +2,7 @@
 layout: article
 title: Test project
 tags: proj
+cover: /assets/images/me_about.JPG
 ---
 
 If you see this page, that means you have setup your site. enjoy! :ghost: :ghost: :ghost:
