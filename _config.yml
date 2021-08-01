@@ -228,4 +228,5 @@ plugins:
 ## => Collections
 ##############################
 collections:
-  - projects
+  projects:
+    output: true
