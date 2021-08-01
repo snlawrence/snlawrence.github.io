@@ -1,0 +1,9 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: article
+title: Project template
+tags: template
+---
+#+END_EXPORT
+#+TOC: headlines 2
