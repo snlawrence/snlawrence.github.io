@@ -4,8 +4,9 @@
 layout: article
 title: Dear Dr Lawrence ...
 tags: updates
-licence: false
+license: false
 show_subscribe: false
+show_edit_on_github: false
 ---
 #+END_EXPORT
 #+TOC: headlines 2
@@ -14,7 +15,7 @@ Last week I received an email addressed "Dear Dr Lawrence...".
 
 After almost 5 years, my PhD has finally drawn to a close and I can add those three letters to the end of my name.
 
-It marks the end of an 11-year stint at Monash University studying under the department of mechanical and aerospace engineering (Mech and Aero Eng. Monash University).
+It marks the end of an 11-year stint at Monash University studying under the Department of Mechanical and Aerospace Engineering
 
 The PhD was a challenging but extremely rewarding experience.
 I have not only been provided with the opportunity to develop as a researcher by also grow as an individual and there are many people to that for this. Thank you to my supervisors and my fellow researchers for making it an enjoyable experience, of which I have many fond memories.

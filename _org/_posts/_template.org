@@ -4,8 +4,9 @@
 layout: article
 title: Blog post template
 tags:
-licence: false
+license: false
 show_subscribe: false
+show_edit_on_github: false
 ---
 #+END_EXPORT
 #+TOC: headlines 2
