@@ -3,7 +3,9 @@
 ---
 layout: article
 title: Blog post template
-tags: template
+tags:
+licence: false
+show_subscribe: false
 ---
 #+END_EXPORT
 #+TOC: headlines 2
