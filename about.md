@@ -6,10 +6,10 @@ header:
 article_header:
   type: overlay
   theme: dark
-  height: 20vh
+  height: 40vh
   background_color: '#203028'
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    gradient: 'linear-gradient(135deg, rgba(212, 207, 201 , .1), rgba(34, 134, 169, .5))'
     src: /assets/images/man_buildings.png
 key: page-about
 ---
