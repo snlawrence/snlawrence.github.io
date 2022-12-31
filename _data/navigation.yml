@@ -5,11 +5,11 @@ header:
       # @end locale config
     url: /about.html
 
-  # - titles:
-  #     # @start locale config
-  #     en      : &EN       Blog
-  #     # @end locale config
-  #   url: /blog.html
+  - titles:
+      # @start locale config
+      en      : &EN       Blog
+      # @end locale config
+    url: /blog.html
 
   # - titles:
   #     # @start locale config
