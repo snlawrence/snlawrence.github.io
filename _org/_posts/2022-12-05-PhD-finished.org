@@ -1,0 +1,24 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: article
+title: Dear Dr Lawrence ...
+tags: updates
+licence: false
+show_subscribe: false
+---
+#+END_EXPORT
+#+TOC: headlines 2
+
+Last week I received an email addressed "Dear Dr Lawrence...".
+
+After almost 5 years, my PhD has finally drawn to a close and I can add those three letters to the end of my name.
+
+It marks the end of an 11-year stint at Monash University studying under the department of mechanical and aerospace engineering (Mech and Aero Eng. Monash University).
+
+The PhD was a challenging but extremely rewarding experience.
+I have not only been provided with the opportunity to develop as a researcher by also grow as an individual and there are many people to that for this. Thank you to my supervisors and my fellow researchers for making it an enjoyable experience, of which I have many fond memories.
+
+Over the past few months, I've started a new journey down a different path. I've been extremely fortunate to be given the opportunity to co-found High Impact Engineers, an organisation helping to increase the amount of impactful work done by engineers globally.
+
+While this is a slightly different path to my PhD, I still carry with me the formal research training, hunger for learning, and desire for self-growth that I cultivated throughout my PhD and all of which intend to put to good use. I'm excited to see where this path takes me!
