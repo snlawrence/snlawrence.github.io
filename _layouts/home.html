@@ -33,25 +33,35 @@ articles:
   show_readmore: true
   show_info: true
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
 <script>
   {%- include scripts/home.js -%}
 </script>
 
-<div class="layout--home layout--home--section layout--home--about">
-  <div class="column-2">
-    <h2>About Me</h2>
-    <p>
-      I'm Sean Lawrence, a Researcher currently completing his PhD in Experimental Fluid Mechanics with the Department of Mechanical and Aerospace Engineering at Monash University.
-    </p>
-    <a class="button button--primary button--pill" href="/about.html">LEARN MORE</a>
+
+<div class="layout--home">
+  {%- include paginator.html -%}
+  
+  <!-- About me -->
+  <div class="section">
+    <div class="about-me">
+      <div class="col-left">
+	<img src={{page.data.about.image}} alt="sean photo">
+      </div>
+      <div class="col-right">
+	<h2>About Me</h2>
+	<p>
+	  {{page.data.about.description}}
+
+	  <br><br>
+	  <a class="button button--outline-info button--pill" align="center" href="/about.html">LEARN MORE</a>
+	</p>	
+      </div>
+    </div>
   </div>
-  <div class="column-2 large-profile">
-  </div>
-</div>
-{%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
+
+  <!-- blog -->
+  {%- if page.show_blog -%}
+  {%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
 
 {%- if _page_articles_data_source -%}
 {%- assign _keys = _page_articles_data_source | split: '.' -%}
@@ -81,37 +91,38 @@ articles:
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 
 {%- if _articles -%}
-<div class="layout--home layout--home--section">
+  <div class="section">
+    <div class="articles">
+      <h2> Blog </h2>
+      {%- include snippets/assign.html
+      target=site.data.variables.default.page.articles.show_info
+      source0=layout.articles.show_info source1=page.articles.show_info -%}
+      {%- assign _show_info = __return -%}
 
-  <div class="layout--articles">
-  <h2> Blog </h2>
-    {%- include snippets/assign.html
-    target=site.data.variables.default.page.articles.show_info
-    source0=layout.articles.show_info source1=page.articles.show_info -%}
-    {%- assign _show_info = __return -%}
+      {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+    </div>
+    <ul class="menu">
+      {%- include snippets/get-nav-url.html path=_action.url -%}
+      {%- assign _url = __return -%}
+      
+      <li><br><a class="button button--outline-info button--pill button--l" href="blog.html">READ MORE</a></li>
 
-    {%- include article-list.html articles=_articles type='brief' show_info=_show_info -%}
+    </ul>
+
   </div>
-  <ul class="menu">
-    {%- include snippets/get-nav-url.html path=_action.url -%}
-    {%- assign _url = __return -%}
-    <li><a class="button button--outline-info button--pill button--lg" href="blog.html">See More</a></li>
+  {%- endif -%}
+  {%- endif -%}
+  
+  <!-- Projects -->
+  {%- if page.show_projects -%}
+  {%- assign _page_articles_data_source = site.projects -%}
 
-  </ul>
-</div>
+  {%- if _page_articles_data_source -%}
+  {%- assign _keys = _page_articles_data_source | split: '.' -%}
+  {%- endif -%}
 
-{%- endif -%}
-
-<!-- Projects -->
-{%- if page.show_projects -%}
-{%- assign _page_articles_data_source = site.projects -%}
-
-{%- if _page_articles_data_source -%}
-{%- assign _keys = _page_articles_data_source | split: '.' -%}
-{%- endif -%}
-
-{%- assign _articles = nil -%}
-{%- for _key in _keys -%}
+  {%- assign _articles = nil -%}
+  {%- for _key in _keys -%}
 
   {%- if forloop.first -%}
     {%- case _key -%}
@@ -133,26 +144,26 @@ articles:
   {%- endif -%}
 {%- endfor -%}
 
-{%- assign _type = item -%}
+  {%- assign _type = item -%}
+  
+  {%- if _articles -%}
+  <div class="section">
+    <div class="articles">
+      <h2> Projects </h2>
+      {%- include snippets/assign.html
+      target=site.data.variables.default.page.articles.show_info
+      source0=layout.articles.show_info source1=page.articles.show_info -%}
+      {%- assign _show_info = __return -%}
 
-<div class="layout--home layout--home--section">
+      {%- include article-list.html articles=_articles type='grid' -%}
+    </div>
+    <ul class="menu">
+      {%- include snippets/get-nav-url.html path=_action.url -%}
+      {%- assign _url = __return -%}
+      <li><a class="button button--outline-info button--pill button--lg" href="projects.html">See More</a></li>
 
-  <div class="layout--articles">
-  <h2> Projects </h2>
-    {%- include snippets/assign.html
-    target=site.data.variables.default.page.articles.show_info
-    source0=layout.articles.show_info source1=page.articles.show_info -%}
-    {%- assign _show_info = __return -%}
-
-  {%- include article-list.html articles=_articles type='grid' -%}
+    </ul>
   </div>
-  <ul class="menu">
-    {%- include snippets/get-nav-url.html path=_action.url -%}
-    {%- assign _url = __return -%}
-    <li><a class="button button--outline-info button--pill button--lg" href="projects.html">See More</a></li>
-
-  </ul>
+  {%- endif -%}
+  {%- endif -%}
 </div>
-{%- endif -%}
-<!-- end Projects -->
-
