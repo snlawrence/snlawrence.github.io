@@ -1,0 +1,56 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: article
+title: BlueDot Impact AI Governance course
+tags: AI AI-governace-course
+license: CC-BY-ND-4.0
+show_subscribe: true
+show_edit_on_github: false
+---
+#+END_EXPORT
+#+TOC: headlines 2
+
+* The course
+I've been accepted into the August cohort of BlueDot Impact's [[https://course.aisafetyfundamentals.com/governance][AI Safety Fundamentals: Governance Course]].
+The course consists of 8 weeks of self-guided learning in combination with group discussions to get me up to speed on the extreme risk from AI and governance approaches to mitigating these risks.
+One thing that I love about the course is that the curriculum is freely published online.
+
+** Why I chose to do this?
+Spending ~5 hours a week reading about a [[https://course.aisafetyfundamentals.com/governance?week=1][relatively technical topic]] and discussing it with a small group of strangers is a non-trivial commitment, so why am I doing it?
+My motivations are two-fold.
+
+Firstly, at [[https://www.highimpactengineers.org/][High Impact Engineers]] we think that working to reduce the risk from AI is one of the cause areas for which engineers are particularly well suited.
+Not everyone is interested in, or a good fit for, doing technical [[https://course.aisafetyfundamentals.com/alignment][AI alignment]] work but there are other ways to contribute to reducing the risks posed by AI, such as working in AI governance.
+Engineers are good at thinking in systems and often work to design things that have human safety as a central objective -- think cars, bridges, electronics, trains, biomedical devices, etc. -- so I think engineers could be very well suited to working on AI governance.
+I did some narrow research into the field while I was preparing for [[http://engineeredforimpact.show/lennart][my conversation with Lennart Heim for the Engineered for Impact podcast]] but I felt like I had only really scratched the surface.
+So I want to broaden my understanding of the field and better understand where engineers can effectively contribute.
+
+My second reason is more personally motivated.
+I think engineers could be good in AI governance; I'm an engineer; so how could I be contributing to AI governance?
+Not only do I want to answer this question but I'd also like to use the course as a low-risk test of my personal fit for working in the AI governance field.
+
+* Sharing my progress
+Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
+I intend to publish my essay here on my blog as well as some key takeaways from the group discussion.
+I think this will give me a framework in which to better reflect on the discussions and document my current thinking on the topics.
+
+Over the past few years, I've found writing to be a good way to summarise my learning and also interrogate my thoughts on a topic.
+Throughout my PhD, I started keeping more extensive notes and documentation on useful resources I had found and my decision-making or thought process.
+It's really easy to just jump consuming content online when I get interested in a topic but I run the risk of learning interesting things only to forget them or vaguely remember them but not where I learnt about them -- this is almost worse because it's really frustrating when this happens.
+Having this second brain of notes was, and continues to be, immensely valuable.
+So this is why I think writing up my thoughts after the weekly discussion will be valuable to me.
+It's also a way to show my work.
+In my [[http://engineeredforimpact.show/soroush][conversation with Soroush Pour]], he highlighted [[https://www.youtube.com/watch?v=WpWX9S4p6r8&t=1552s][the value of showing your work]] and allowing other to join you on your journey.
+This course seems like a great opportunity to take Soroush's advice and run with it!
+
+** AI Governance course post series
+I'll update this list as I publish posts:
+- Week 1: [[http:/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]    
+
+* Other interest in AI
+As somewhat of an aside, I've also developed an interest in [[https://www.neelnanda.io/mechanistic-interpretability/getting-started][mechanistic interpretability]] (MI) after attending a presentation by [[https://www.neelnanda.io/][Neel Nanda]] on the topic at EAG London earlier this year.
+MI is a "field of study of reverse engineering neural networks from the learned weights down to human-interpretable algorithms. Analogous to reverse engineering a compiled program binary back to source code" ([[https://dynalist.io/d/n2ZWtnoYHrU1s4vnFSAQ519J][reference]]).
+This is quite different from AI governance, however, I think there could be an intersection of the two fields where MI is used as a mechanism by which to do governance.
+
+

@@ -1,0 +1,95 @@
+---
+layout: article
+title: Can AI progress continue at the current pace?
+tags: AI AI-governace-course
+license: CC-BY-ND-4.0
+show_subscribe: false
+show_edit_on_github: false
+---
+
+<p>
+This post is for <a href="https://course.aisafetyfundamentals.com/home/governance?week=1">Week 1: Introduction to AI and Machine Learning</a> of the <a href="https://course.aisafetyfundamentals.com/governance">BlueDot Impact AI Safety Fundamentals: Governance Course</a>.
+Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
+This post is <a href="http:/2023/08/14/AI-governance-course-explainer.html">part of a series</a> that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain <a href="http:/2023/08/14/AI-governance-course-explainer.html#org8fcce5a">here</a>.
+</p>
+
+<div id="outline-container-org6e21137" class="outline-2">
+<h2 id="org6e21137">Essay task</h2>
+<div class="outline-text-2" id="text-org6e21137">
+<p>
+<b>To what extent do you currently believe that AI progress can continue at the current pace? What are your uncertainties?</b>
+</p>
+
+<p>
+AI progress can continue at the current pace due mainly to the continuing increase in computing power available to train powerful AI systems. While improvements in all three inputs &#x2013; compute, algorithms, and data &#x2013; from the <a href="https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Triad-Report.pdf">AI triad</a> have led to AI progress over the past decade, it appears that marginal increases in compute power will be most likely and lead to large increases in capabilities.
+</p>
+
+<p>
+The quality of compute available to train AI systems dictates the number of parameters that the system can use and this directly correlates to performance. As large AI labs gain more popularity and greater access to computation power it seems likely that progress will continue at the current pace, or perhaps even faster. Two key uncertainties I have is the ability of the physical manufacturing of compute infrastructure to match the demand from AI labs and the ability of AI labs to be able to afford to access the infrastructure. If there is an insufficient supply of computational infrastructure to meet the demand from AI labs then AI progress could be hampered. It seems unlikely that AI labs won't find a way to be profitable enough to continue to be able to afford their compute given the popularity of AI and the financial upside that it promises for downstream users.
+</p>
+
+<p>
+The quality of algorithms and data seems likely to only increase and consequently lead to continued AI progress. I'm uncertain about the improvement of both of these inputs, however. Algorithms could stagnate or just take a lot of additional time to develop but progress could be improved by using current AI systems to help progress the state of the art. Access to data seems likely to only improve over time, although I'm unsure if the quality of data could decrease over time as more AI-generated data is put out onto the internet. That said, even if the development of both algorithms and data were to stagnate, increased access to AI compute seems likely to be sufficient to allow AI progress to continue. This is demonstrated by the <a href="https://sites.research.google/parti/">Parti series of image models</a> in which models were trained in the same way except for increasing the number of parameters. Increasing the parameters resulted in significantly better image generation with the same algorithms and data so it seems likely that AI progress could continue only with increased compute.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org463d7cd" class="outline-2">
+<h2 id="org463d7cd">Group discussion</h2>
+<div class="outline-text-2" id="text-org463d7cd">
+<p>
+<b>Reflections on feedback on my essay</b>
+</p>
+<ul class="org-ul">
+<li>It would be interesting to understand the strength of correlation between compute and performance to present a more nuanced take on this.</li>
+<li>Further research into the availability of data over time and the degree to which a less-than-optimal amount of data would slow progress would be a valuable addition.</li>
+<li>What sorts of AI systems can benefit from the output of previous AI systems? How much is it bad for subsequent systems?</li>
+</ul>
+
+<p>
+<b>Some things I learnt</b>
+</p>
+<ul class="org-ul">
+<li>People have forecast the availability of data quality. For example <a href="https://arxiv.org/abs/2211.04325">Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning</a> suggests that high-quality &#x2013; loosely meaning human-generated and quality assured &#x2013; language data will likely be exhausted before 2026. Exhaustion of the data would mean that there's not enough data to follow the optimal scaling laws (I was recommended <a href="https://arxiv.org/abs/2203.15556">this paper</a> and the chinchilla paper for learning more about scaling laws).</li>
+</ul>
+
+<p>
+<b>Other thoughts</b>
+</p>
+<ul class="org-ul">
+<li>A focus of the readings for the week was the AI triad &#x2013; algorithms, data, and compute &#x2013; a concept I was familiar with from preparing for <a href="http://engineeredforimpact.show/lennart">my podcast conversation with Lennart Heim</a>.
+<ul class="org-ul">
+<li>We discussed the geopolitical, financial, and talent constraints that may impact the AI triad. Others suggested that these things should be part of the triad but I disagreed and here is why:
+<ul class="org-ul">
+<li>The AI triad is a model of the inputs to creating AI systems and I see these additional factors &#x2013; geopolitical relations, financial costs of compute, and the availability of talent for selecting data and writing algorithms &#x2013; as contextual considerations around the inputs to training AI systems. They are the backdrop on which AI systems are trained. They can serve to modulate the availability and quality of the inputs but aren't inputs themselves.
+<ul class="org-ul">
+<li>I guess this makes them potential levers for governance or, at least, important things to consider when analysing the effects of governance-based interventions.</li>
+</ul></li>
+</ul></li>
+<li>I found this discussion valuable for building upon my mental model of the AI triad by connecting it to the real world.</li>
+</ul></li>
+<li>I found the <a href="https://medium.com/@richardcngo/visualizing-the-deep-learning-revolution-722098eb9c5">this article which visualises the quality of different sized AI models</a> a useful illustration of the impact of compute on performance.</li>
+<li>I like the way discussion and feedback on written thoughts can reveal things I wouldn’t have otherwise thought about, or quirks/errors in my conception of things that I would have struggled to otherwise notice.
+<ul class="org-ul">
+<li>For example, in the course of the discussion session I quickly defined "computing power" as "the physical compute chips on which the discrete operations required to execute the algorithms are performed". Someone pointed out that this doesn't capture floating-point operations (FLOPS) which I agree is a mistake a definition including FLOPS would be a more accurate measure of compute power.</li>
+</ul></li>
+</ul>
+
+<p>
+<b>Further reading</b>
+</p>
+<ul class="org-ul">
+<li><a href="https://www.alignmentforum.org/posts/wgio8E758y9XWsi8j/grokking-forecasting-tai-with-biological-anchors#Affordability_of_compute">On the affordability of compute</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc255db2" class="outline-2">
+<h2 id="orgc255db2">Read more</h2>
+<div class="outline-text-2" id="text-orgc255db2">
+<p>
+You can view <a href="http:/2023/08/14/AI-governance-course-explainer.html#org2bf5124">the rest of the series here</a> or view <a href="http:/archive.html?tag=AI-governace-course">any other posts related to the course here</a>.
+</p>
+</div>
+</div>
