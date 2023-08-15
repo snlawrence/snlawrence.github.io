@@ -46,7 +46,7 @@ This course seems like a great opportunity to take Soroush's advice and run with
 
 ** AI Governance course post series
 I'll update this list as I publish posts:
-- Week 1: [[http:/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]    
+- Week 1: [[http:snlawrence.com/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]
 
 * Other interest in AI
 As somewhat of an aside, I've also developed an interest in [[https://www.neelnanda.io/mechanistic-interpretability/getting-started][mechanistic interpretability]] (MI) after attending a presentation by [[https://www.neelnanda.io/][Neel Nanda]] on the topic at EAG London earlier this year.
