@@ -4,7 +4,7 @@
 layout: article
 title: Can AI progress continue at the current pace?
 tags: AI AI-governace-course
-license: CC-BY-ND-4.0
+license: true
 show_subscribe: false
 show_edit_on_github: false
 ---

@@ -4,7 +4,7 @@
 layout: article
 title: BlueDot Impact AI Governance course
 tags: AI AI-governace-course
-license: CC-BY-ND-4.0
+license: true
 show_subscribe: true
 show_edit_on_github: false
 ---
