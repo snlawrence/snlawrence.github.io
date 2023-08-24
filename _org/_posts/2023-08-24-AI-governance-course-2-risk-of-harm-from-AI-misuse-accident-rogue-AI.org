@@ -53,4 +53,4 @@ To conclude, harm seems most likely to be caused by deliberate misuse at present
 -----
 
 * Read more
-You can @@html:<a href="2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a>@@ or @@html:<a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>@@.
+You can @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a>@@ or @@html:<a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>@@.

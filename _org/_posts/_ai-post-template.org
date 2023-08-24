@@ -1,0 +1,26 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: article
+title: The likelihood of risks arrising from  misuse, accident, or rogue, agentic AI systems causing harm
+tags: AI AI-governace-course
+license: true
+show_subscribe: false
+show_edit_on_github: false
+---
+#+END_EXPORT
+
+This post is for [[https://course.aisafetyfundamentals.com/home/governance?week=][Week ??: TODO??]] of the [[https://course.aisafetyfundamentals.com/governance][BlueDot Impact AI Safety Fundamentals: Governance Course]].
+Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
+This post is @@html:<a href="/2023/08/14/AI-governance-course-explainer.html">part of a series</a>@@ that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org8fcce5a">here</a>@@.
+
+* Essay task
+
+@@html:<i><a href="/2023/08/14/AI-governance-course-explainer.html#org45001ca">Essay task disclaimer</a></i>@@
+
+* Group discussion
+
+-----
+
+* Read more
+You can @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a>@@ or @@html:<a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>@@.
