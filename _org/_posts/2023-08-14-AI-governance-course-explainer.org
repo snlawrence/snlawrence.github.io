@@ -46,7 +46,17 @@ This course seems like a great opportunity to take Soroush's advice and run with
 
 ** AI Governance course post series
 I'll update this list as I publish posts:
-- Week 1: [[http:snlawrence.com/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]
+- Week 1: [[http:/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]
+- Week 2: [[http:/2023/08/24/AI-governance-course-2-risk-of-harm-from-AI-misuse-accident-rogue-AI.html][The likelihood of risks arrising from  misuse, accident, or rogue, agentic AI systems causing harm]]
+
+*** Disclaimer on my response to the essay tasks
+My response to the essay prompt is typically written in over 1-2 hours and not heavily edited, unless I indicate otherwise.
+You can treat the essays as a writing exercise whose objective is to get me to more deeply engage with the topics of the week's readings and practice writing essays.
+
+The degree to which I agree with, or am certain about, the claims I make in each essay will vary.
+I may convey greater certainty in the ideas or arguments than I actually have.
+I haven’t made a deliberate attempt to express my level of uncertainty in the arguments I present.
+I don’t think this is required to achieve my objectives for the essays and expressing uncertainty could conceivably take me twice as long to reflect on my uncertainties of each argument as it has to write the essay — which becomes an intractable length of time thus defeating the purpose of the exercise.
 
 * Other interest in AI
 As somewhat of an aside, I've also developed an interest in [[https://www.neelnanda.io/mechanistic-interpretability/getting-started][mechanistic interpretability]] (MI) after attending a presentation by [[https://www.neelnanda.io/][Neel Nanda]] on the topic at EAG London earlier this year.
