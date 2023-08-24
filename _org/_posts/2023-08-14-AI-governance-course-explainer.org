@@ -46,8 +46,8 @@ This course seems like a great opportunity to take Soroush's advice and run with
 
 ** AI Governance course post series
 I'll update this list as I publish posts:
-- Week 1: [[http:/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html][Can AI progress continue at the current pace?]]
-- Week 2: [[http:/2023/08/24/AI-governance-course-2-risk-of-harm-from-AI-misuse-accident-rogue-AI.html][The likelihood of risks arrising from  misuse, accident, or rogue, agentic AI systems causing harm]]
+- Week 1: @@html:<a href="/2023/08/15/AI-governance-course-can-AI-progress-continue-at-the-current-pace.html">Can AI progress continue at the current pace?</a>@@
+- Week 2: @@html:<a href="/2023/08/24/AI-governance-course-2-risk-of-harm-from-AI-misuse-accident-rogue-AI.html">The likelihood of risks arrising from  misuse, accident, or rogue, agentic AI systems causing harm</a>@@
 
 *** Disclaimer on my response to the essay tasks
 My response to the essay prompt is typically written in over 1-2 hours and not heavily edited, unless I indicate otherwise.

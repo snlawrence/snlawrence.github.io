@@ -12,7 +12,7 @@ show_edit_on_github: false
 
 This post is for [[https://course.aisafetyfundamentals.com/home/governance?week=2][Week 2: Introduction to potential catastrophic risks from AI]] of the [[https://course.aisafetyfundamentals.com/governance][BlueDot Impact AI Safety Fundamentals: Governance Course]].
 Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
-This post is [[http:/2023/08/14/AI-governance-course-explainer.html][part of a series]] that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain [[http:/2023/08/14/AI-governance-course-explainer.html#org8fcce5a][here]].
+This post is @@html:<a href="/2023/08/14/AI-governance-course-explainer.html">part of a series</a>@@ that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org8fcce5a">here</a>@@.
 
 * Essay task
 *Do you think risks arising from misuse, accidents, or rogue, agentic AI systems, are more likely to cause harm? Does this answer change when limiting your time horizon to 5 years, 15 years and 30 years?*
@@ -27,7 +27,7 @@ It is not clear that this risk posed by rogue, agentic AI systems is functionall
 
 To conclude, harm seems most likely to be caused by deliberate misuse at present. As capabilities increase over time the likelihood of harm from accidents could increase and surpass the chances of harm from misuse as the capabilities of cutting-edge AI systems are explored. Rogue, agentic AI systems, as a risk scenario, is functionally similar to the risk of accidental harm or harm by misuse caused by cutting-edge systems and the chances of harm are much higher 30 years from now than at present.
 
-/[[http:/2023/08/14/AI-governance-course-explainer.html#org45001ca][Essay task disclaimer]]/
+@@html:<i><a href="/2023/08/14/AI-governance-course-explainer.html#org45001ca">Essay task disclaimer</a></i>@@
 
 * Group discussion
 ** Misc. notes
@@ -49,5 +49,8 @@ To conclude, harm seems most likely to be caused by deliberate misuse at present
 - [[https://open.spotify.com/episode/6LIvveCOxqL90STeWbZNI2?si=d369164ba6414599][Podcast from Making Sense with Sam Harris on information integrity]]
   - I've since listened to the first half of this (what available on the free feed) and I think I want to subscribe to the full feed to hear the rest of it
 
+
+-----
+
 * Read more
-You can view [[http:/2023/08/14/AI-governance-course-explainer.html#org2bf5124][the rest of the series here]] or view [[http:/archive.html?tag=AI-governace-course][any other posts related to the course here]].
+You can @@html:<a href="2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a>@@ or @@html:<a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>@@.
