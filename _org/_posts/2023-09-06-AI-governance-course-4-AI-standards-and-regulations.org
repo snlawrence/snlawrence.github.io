@@ -1,0 +1,80 @@
+#+OPTIONS: toc:nil num:nil
+#+BEGIN_EXPORT html
+---
+layout: article
+title: AI standards and regulations
+tags: AI AI-governace-course
+license: true
+show_subscribe: false
+show_edit_on_github: false
+---
+#+END_EXPORT
+
+This post is for [[https://course.aisafetyfundamentals.com/home/governance?week=4][Week 4: AI standards and regulations]] of the [[https://course.aisafetyfundamentals.com/governance][BlueDot Impact AI Safety Fundamentals: Governance Course]].
+Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
+This post is @@html:<a href="/2023/08/14/AI-governance-course-explainer.html">part of a series</a>@@ that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org8fcce5a">here</a>@@.
+
+* Essay task
+*Develop a regulatory mechanism for the evaluation of models’ capability and alignment, with the intention of avoiding development of unsafe models. (<=500 words)**
+
+This regulatory mechanism aims to reduce the chances of unsafe AI models being developed by AI developers through both self- and independent-assessment of the capabilities and alignment of new AI models. The mechanism targets the pre-training development of an AI model with subsequent checks post-training to evaluate outcomes. Three parties are involved: AI developers, a regulator, and independent advisers who are capable of evaluating cutting-edge AI models.
+
+The core evaluation loop of the mechanism involves the following steps:
+
+1. AI developer prepares a proposal with an evaluation of the capability and alignment of the proposed model. The developer also conducts a risk assessment of the model, including proposed risk mitigation strategies.
+2. The proposal and the risk assessment are submitted to the regulator.
+3. The regulator engages independent advisers to evaluate the AI developer’s submission and provide a recommendation for the AI develop to either
+  - proceed,
+  - proceed on condition of additional known risk mitigation strategies being implemented,
+  - not proceed unless additional and/or novel risk mitigation strategies are implemented/developed and a new proposal and risk assessment is submitted,
+  - or not proceed under any circumstances.
+4. The regulator collates the adviser recommendations and makes a final judgement.
+5. The judgement is passed back to the AI developer who must comply with it and verify their compliance.
+
+The evaluation loop is implemented at three stages in the development process for a new AI model:
+
+1. *Pre-training*: once an AI developer is certain they would like to train a model; proceeding with the training is conditional on the outcome of the regulatory evaluation loop.
+2. *Pre-deployment*: after training and before deployment of the model; deployment is conditional on the outcome of the regulatory evaluation loop.
+3. *Post-deployment*: after deployment of the model; continued deployment is conditional on the outcome of the regulatory evaluation loop.
+
+In the pre-training evaluation, the AI developer’s evaluation is based on previously trained models and experimental models leading up to the training run. The risk assessment includes risk mitigation strategies that the developer will be held accountable to implement. These strategies can be for any part of the training, development, or deployment process of the model. In response to the evaluation results, AI develops may need to change their plans for the model to reduce it’s capabilities or potential for misalignment, or add additional risk mitigation strategies. 
+
+By repeating the evaluation loop after training and before deployment, the regulator can assess the accuracy of the AI developers initial proposal as well as the quality of recommendations from the independent advisers. This gives the regulator the opportunity to learn and improve the process over time. The risk from unsafe models will increase over time, so having a system in place to enable improvement of the regulatory mechanism is essential to achieve the aim of minimising the chances that an unsafe model is developed.
+
+Some additional considerations around competitive pressure on AI developers could limit the success of this mechanism. AI developers have competitive pressure to deceive regulators, or downplay the capabilities, alignment, or risks for the model for financial gain. Repeating the evaluation loop pre-deployment and post-deployment maybe help to disincentivise developer deception. Additionally, reporting on potential capabilities or alignment could trigger competition from other companies who then rush development, or downplay the risks of their own models. However, this could be mitigated by making the submissions to the regulator mostly private.
+
+
+
+@@html:<i><a href="/2023/08/14/AI-governance-course-explainer.html#org45001ca">Essay task disclaimer</a></i>@@
+
+* Group discussion
+** Key takeaways
+This week had a heavy focus on the difference between regulations and standards and the pros and cons of each for guiding the safe development of AI.
+I found thinking through the nuanced differences between regulations and standards to be one of the most useful aspects of this week's reading, activities and discussion.
+We also spent some time discussing the regulations that are in place or proposed for different countries -- we talked about the US, EU, UK, and China.
+I had totally forgotten this from the reading, so this was a valuable aspect of the discussion.
+
+For reference, Australia's approach appears to be very similar to that of the US based on a brief look.
+The Australian Department of Industry, Science and Resources has published [[https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-framework/australias-ai-ethics-principles][Australia's AI Ethics Principles]], a voluntary framework intended to be "aspirational and [to] complement -- not substitute -- existing AI regulations and practices" (this quote implies there could be other regulation that I'm not aware of; I only did some quick Googling to get a quick calibration on how Australia compares to the other jurisdictions we were discussing).
+This appears to be comparable in approach to the US National Institute for Standards and Technology's [[https://www.nist.gov/itl/ai-risk-management-framework][AI Risk Management Framework]] and the Senate Majority Leader's [[https://www.democrats.senate.gov/imo/media/doc/schumer_ai_framework.pdf][SAFE Innovation]] framework.
+
+** My questions from the reading
+One question this week's readings raised for me was about the supply of sufficiently skilled exports outside of leading AI labs.
+If future regulations, or standards, require that external experts scrutinise the work of leading AI labs, will those experts exist or will all sufficiently skilled experts be working at AI labs?
+In response to this question, someone highlighted that [[https://evals.alignment.org/][ARC evals]] exists -- [[https://www.youtube.com/watch?v=l2LS18rr5B4][this overview of ARC Evals presented by Beth Barnes]] was one of "reading" for the week -- and that it appears that there are probably enough skilled "external" experts for now but when more labs pop up in the future this may not be the case.
+
+I agree that in a future with many many more leading AI companies -- companies capable of training cutting-edge AI models -- that the current number of "external" experts seems insufficient.
+However, I can also picture a future where there remain only 3-5 leading AI companies because only those who were sufficiently far ahead of the pack at a certain point in time can amass the financial and talent resource required to keep up with cutting-edge development.
+If that "certain point in time" is now, then this would imply that the current big players will be able to sustain their lead while competitors wither away, unable to keep pace with the resources required to keep pace with the juggernauts.
+
+** Misc
+A point of interest raised in the discussion: Netflix runs on Amazon AWS but Amazon couldn't shut them down if they wanted to because they don't know where the data is on their servers -- Amazon having their own competing streaming service, of course.
+This was raised in a discussion around data centres knowing who is using their services and where data is being stored.
+I haven't looked into this any further, and I'm sure there's more nuance to the situation, but it's an interesting anecdote on the challenge of imposing limitations on access to cloud computing services.
+  
+-----
+
+
+
+* Read more
+You can @@html:<a href="/2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a>@@ or @@html:<a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>@@.
