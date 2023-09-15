@@ -1,0 +1,190 @@
+---
+layout: article
+title: Closing regulatory gaps through non-proliferation
+tags: AI AI-governace-course
+license: true
+show_subscribe: false
+show_edit_on_github: false
+---
+
+<p>
+This post is for <a href="https://course.aisafetyfundamentals.com/home/governance?week=5">Week 5: Closing regulatory gaps through non-proliferation</a> of the <a href="https://course.aisafetyfundamentals.com/governance">BlueDot Impact AI Safety Fundamentals: Governance Course</a>.
+Each week of the course comprises some readings, a short essay writing task, and a 2-hour group discussion.
+This post is <a href="/2023/08/14/AI-governance-course-explainer.html">part of a series</a> that I'm publishing to show my work, document my current thinking on the topics, and better reflect on the group discussion on the topic as I explain <a href="/2023/08/14/AI-governance-course-explainer.html#org8fcce5a">here</a>.
+</p>
+
+<div id="outline-container-org4c1ce4a" class="outline-2">
+<h2 id="org4c1ce4a">Essay task</h2>
+<div class="outline-text-2" id="text-org4c1ce4a">
+<p>
+This week we were tasked with defining and evaluating a policy tool supporting one of the strategic directions from Holden Karnofsky's <a href="https://www.cold-takes.com/racing-through-a-minefield-the-ai-deployment-problem/">Racing through a minefield: the AI deployment problem</a> blog post on <a href="https://www.cold-takes.com/">Cold Takes</a>.
+I selected
+</p>
+<blockquote>
+<p>
+<b>Global monitoring</b>: identify and prevent “incautious” projects racing toward deploying dangerous AI systems.
+</p>
+</blockquote>
+
+<p>
+Somewhat more concretely, what might this look like?
+</p>
+
+<ul class="org-ul">
+<li>Creating devices and mechanisms by which the usage of data centres containing cutting-edge AI chips can be monitored
+<ul class="org-ul">
+<li>In a similar vein to nuclear enrichment monitoring devices</li>
+<li>Devices are tamper-proof, or tamper-detectable</li>
+<li>Could monitor things like:
+<ul class="org-ul">
+<li>HVAC cooling load</li>
+<li>Power draw</li>
+<li>Water/coolant consumption</li>
+<li>Compute processing time</li>
+</ul></li>
+<li>Net consumption per unit of compute can be benchmarked for each data centre facility</li>
+</ul></li>
+<li>Enforce a know-your-customer (KYC) policy for the operators of the data centres which results in customer compute usage being tracked</li>
+<li>Reconcile the total usage from the monitoring devices/mechanisms against the KYC compute monitoring as a verification mechanism
+<ul class="org-ul">
+<li>This helps to incentives/enforce stricter KYC compute monitoring as gaps in customer usage could be detected</li>
+</ul></li>
+<li>Customer usage is reported to an international governing body and is made available to either the public or a select group of 'cautious' actors
+<ul class="org-ul">
+<li>Maybe only usage over a certain threshold is reported</li>
+<li>Maybe the T&amp;C of using AI facilities is that you agree to your usage being reported</li>
+</ul></li>
+</ul>
+
+<p>
+Explain concrete reasons this may be feasible or infeasible to implement. You may wish to focus on a particular jurisdiction of your choice.
+</p>
+
+<ul class="org-ul">
+<li>Feasible
+<ul class="org-ul">
+<li>Similar monitoring frameworks have been created for nuclear weapons to allow for</li>
+<li>KYC is an existing framework from the financial sector that has helped prevent fraud and bad actors (this is an assumption I would want to verify)</li>
+<li>It is likely relatively trivial to correlate the facility monitoring metrics (cooling load, power draw, coolant, etc.) to the compute load in a facility.</li>
+<li>Given the supply chain for cutting-edge chips involves a limited set of actors, it could be relatively straightforward for sellers of chips to require data centre buyers to have KYC + facility monitoring in place
+<ul class="org-ul">
+<li>This requirement could come from governments in a similar vein to the way financial KYC is required to allow a company to operate in a field.
+<ul class="org-ul">
+<li>US companies &#x2013; Amazon Web Services, Microsoft Azure, and Google Cloud &#x2013; account for 65% of the market share of cloud computing providers (reference). Therefore, regulation on monitoring enforced by the US government would affect a significant fraction of the cloud computing market.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>The supply chain is more concentrated upstream &#x2013; for example at the AI chip fabrication or semiconductor manufacturing equipment stage &#x2013; which could be even higher leverage for 'trickle down' governance via requiring downstream buyers to adhere to KYC + facility monitoring</li>
+<li>Infeasible
+<ul class="org-ul">
+<li>It could be hard to get data centre operators and companies to buy into KYC + shared reporting metrics
+<ul class="org-ul">
+<li>This is further complicated by data centres being distributed internationally across many jurisdictions (I assume)</li>
+</ul></li>
+<li>This would require a critical mass of AI-capable data centres to agree to monitoring
+<ul class="org-ul">
+<li>It might be that not all data centres need to be monitored and that if enough are monitored then it would be possible to infer what is happening at others somehow. Eg if a company brings out a new AI product with no/low reported usage, then it's likely they used an unmonitored data centre for training. This still seems far from an ideal scenario though, as it doesn't allow for a prior monitoring.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+What are the potential costs to the approach, or why might it be harmful?
+</p>
+
+<ul class="org-ul">
+<li>It potentially sets up an incentive structure for "bad" or "incautious" actors to turn to, or create, a black market
+<ul class="org-ul">
+<li>Although there could be upsides to this &#x2013; such as it being easier to shut down illegal data centres</li>
+</ul></li>
+<li>This mechanism starts to break down if/when cutting-edge chips are no longer required by "incautious" actors to train dangerous models</li>
+</ul>
+
+<p>
+How well does it address the risks it addresses? E.g. there is a significant difference between mitigating a little, mitigating a lot and eliminating a risk - which may inform whether this measure is sufficient for handling this risk.
+</p>
+
+<ul class="org-ul">
+<li>It doesn't eliminate the risk that a bad/incautious actor accesses a black market for AI training</li>
+<li>However, it seems to mitigate a lot of the risk by making it impossible for non-nefarious but "incautious" actors &#x2013; ie. actors that won't do illegal things but are nonetheless incautious &#x2013;  to use large quantities of compute without being noticed.</li>
+<li>Is "being noticed" sufficient to reduce the risk of "incautious" actors racing towards deploying dangerous AI systems? No, certainly not, but it provides information for other "cautious" actors to act on to limit the actions of "incautious" actors</li>
+<li>So, in summary, facility and KYC compute monitoring and reconciliation doesn't prevent racing in and of itself, however, it would be a necessary step to enable the prevention of projects racing to deploy dangerous AI systems.</li>
+</ul>
+
+<p>
+<i><a href="/2023/08/14/AI-governance-course-explainer.html#org45001ca">Essay task disclaimer</a></i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e93748" class="outline-2">
+<h2 id="org7e93748">Group discussion</h2>
+<div class="outline-text-2" id="text-org7e93748">
+</div>
+<div id="outline-container-org193115d" class="outline-3">
+<h3 id="org193115d">The AI race between the US and China</h3>
+<div class="outline-text-3" id="text-org193115d">
+<p>
+The focus of one of the readings this week, <a href="https://aisafetyfundamentals.com/governance-blog/state-of-ai-in-different-countries?_gl=1*z0r5ym*_ga*MzQwNzQyNzcuMTY5NDc4OTg1MA..*_ga_8W59C8ZY6T*MTY5NDc4OTg1MC4xLjEuMTY5NDc5MDIzNC4wLjAuMA..">The State of AI in Different Countries — An Overview by Lizka Vaintrob</a>, was the relative state of AI between the US and China.
+The article makes the case for the US, and its allies, maintaining an advantage in the ongoing development of AI capabilities over China.
+Key arguments for this included higher investment, access to top AI talent, access to the semiconductor supply chain, and censorship in China.
+</p>
+
+<p>
+For me, the most interesting takeaway from the article was that China may not be fertile ground for ongoing AI innovation.
+The political restrictions placed on the development and deployment of AI systems may prove too limiting for innovation relative to the conditions present in the US and its allies.
+This, combined with the other differences between the financial, scientific, and talent landscapes, could mean that China cannot compete with US AI innovation in the long run.
+</p>
+
+<p>
+I find this argument, and the evidence presented in Vaintrob's article, compelling and have downgraded the level of concern I have about China when it comes to cutting-edge AI and upgraded the concern I have about the US &#x2013; although I still feel that there are risks from non-cutting-edge AI when it comes to China.
+When thinking about how cutting-edge AI models might <a href="https://aisafetyfundamentals.com/governance-blog/overview-of-ai-risk-exacerbation?_gl=1*nh158y*_ga*MzQwNzQyNzcuMTY5NDc4OTg1MA..*_ga_8W59C8ZY6T*MTY5NDc4OTg1MC4xLjEuMTY5NDc5MTczMy4wLjAuMA..">exacerbate long-running catastrophic risks</a>, this week's content has lead me to think we should be more worried about AI development in the US.
+The US seems much more likely to maintain the lead on AI development and efforts to reduce the risks from cutting-edge AI models consequently seem better aimed at the US over China, on the margin.
+</p>
+
+<p>
+&#x2013;
+</p>
+
+<p>
+On a somewhat related point, this week's discussion surfaced the idea that the US export controls placed on China make it possible for the US to discuss self-regulation.
+The reasoning is that while the "US people" &#x2013; policymakers, interest groups, etc. &#x2013; feel that there is competitive pressure from China, they will be uninterested in contemplating slowing down their development.
+So export controls on China assuage the fear of China taking the lead and enable self-regulation &#x2013; which could result in a slowing of development &#x2013; to enter the Overton window.
+</p>
+
+<p>
+It's an interesting idea about which I'd be curious to learn more &#x2013; specifically how representative of the truth is it?
+Abstracting the model of export controls as instrumentally valuable for enabling discourse on US-centric regulation is interesting to me.
+What other instrumentally valuable governance mechanisms are out there?
+And how could they be a means to the end of reducing catastrophic risk?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdfb7cc8" class="outline-3">
+<h3 id="orgdfb7cc8">Some miscellaneous thoughts/notes from the discussion</h3>
+<div class="outline-text-3" id="text-orgdfb7cc8">
+<ul class="org-ul">
+<li>A thought experiment: if you feel that the US placing export controls on China is self-serving to US interests, how would you feel if an international body decided to place export controls on China?</li>
+<li>US antitrust laws prohibit the private sharing of information between companies. This means AI companies can't share safety information secretly between each other. As a result, they publish public articles to share safety best practices, etc.
+<ul class="org-ul">
+<li>As a hypothetical, would relaxing antitrust laws such that AI companies can secretly share safety information be net beneficial for reducing risk from AI?
+<ul class="org-ul">
+<li>I "weakly disagreed" based on thinking it better for safety techniques and best practices to be publically accessible by default, instead of secretly shared &#x2013; assuming that sharing safety techniques doesn't reveal information that would enable others to develop capabilities</li>
+</ul></li>
+</ul></li>
+<li>A governance system in which it is possible to view which GPUs are being used by which companies to train models could be an information security vulnerability. It would enable bad actors to target those GPUs for cyber attacks.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5de9039" class="outline-2">
+<h2 id="org5de9039">Read more</h2>
+<div class="outline-text-2" id="text-org5de9039">
+<p>
+You can <a href="/2023/08/14/AI-governance-course-explainer.html#org2bf5124">view the rest of the series here</a> or <a href="/archive.html?tag=AI-governace-course">view any other posts related to the course here</a>.
+</p>
+</div>
+</div>
